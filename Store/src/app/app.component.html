@@ -1,0 +1,11 @@
+<!-- src/app/app.component.html -->
+
+<div style="text-align:center">
+  <h1>Welcome to {{ title }}!</h1>
+  <router-outlet></router-outlet>
+  <app-auth-menu></app-auth-menu>
+
+  <!-- Додаємо кнопки для переходу -->
+  <button (click)="navigateTo('/login')">Go to Login</button>
+  <button (click)="navigateTo('/register')">Go to Register</button>
+</div>

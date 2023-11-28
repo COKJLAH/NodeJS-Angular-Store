@@ -1,0 +1,5 @@
+<div *ngFor="let customer of customers">
+    {{ customer.Name }} - {{ customer.PhoneNo }}
+    <button (click)="deleteCustomer(customer.ID)">Delete</button>
+  </div>
+  
